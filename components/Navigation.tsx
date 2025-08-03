@@ -1,8 +1,10 @@
 import Link from "next/link";
 import styles from "../styles/Navigation.module.scss";
 import { useState } from "react";
+import { useRouter } from "next/router";
 export default function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
+  const router = useRouter();
 
   const getCloseStyle = () => {
     return showMenu ? styles.close : "";
@@ -32,7 +34,9 @@ export default function Navigation() {
           <li className={styles.navitem + " " + getShowStyle()}>
             <Link
               href="/"
-              className={`${styles.navlink} ${styles.current}`}
+              className={`${styles.navlink} ${
+                router.pathname === "/" ? styles.current : ""
+              }`}
               onClick={() => setShowMenu(false)}
             >
               Home
@@ -41,7 +45,9 @@ export default function Navigation() {
           <li className={styles.navitem + " " + getShowStyle()}>
             <Link
               href="/about"
-              className={styles.navlink}
+              className={`${styles.navlink} ${
+                router.pathname === "/about" ? styles.current : ""
+              }`}
               onClick={() => setShowMenu(false)}
             >
               About
@@ -50,7 +56,9 @@ export default function Navigation() {
           <li className={styles.navitem + " " + getShowStyle()}>
             <Link
               href="/work"
-              className={styles.navlink}
+              className={`${styles.navlink} ${
+                router.pathname === "/work" ? styles.current : ""
+              }`}
               onClick={() => setShowMenu(false)}
             >
               My Work
@@ -59,7 +67,9 @@ export default function Navigation() {
           <li className={styles.navitem + " " + getShowStyle()}>
             <Link
               href="/contact"
-              className={styles.navlink}
+              className={`${styles.navlink} ${
+                router.pathname === "/contact" ? styles.current : ""
+              }`}
               onClick={() => setShowMenu(false)}
             >
               How To Reach Me

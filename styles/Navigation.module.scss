@@ -106,10 +106,6 @@
       //Slide in from right
       transform: translate3d(0, 0, 0);
     }
-
-    &.current > a {
-      color: $secondary-color;
-    }
   }
 
   .navlink {
@@ -124,6 +120,9 @@
     @include mixins.easeOut;
 
     &:hover {
+      color: $secondary-color;
+    }
+    &.current {
       color: $secondary-color;
     }
   }
