@@ -4,8 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   output: "export",
-  // trailingSlash: true,
-  //basePath: "/sample-static-app",
+  basePath: "/my_portfolio",
 };
 
 export default nextConfig;
