@@ -3,10 +3,19 @@ import styles from "../styles/Navigation.module.scss";
 import { useState } from "react";
 export default function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
+
+  const getCloseStyle = () => {
+    return showMenu ? styles.close : "";
+  };
+
+  const getShowStyle = () => {
+    return showMenu ? styles.show : "";
+  };
+
   return (
     <header>
       <div
-        className={styles.menubtn + " " + (showMenu ? styles.close : "")}
+        className={styles.menubtn + " " + getCloseStyle()}
         onClick={() => {
           setShowMenu(!showMenu);
         }}
@@ -15,30 +24,44 @@ export default function Navigation() {
         <div className={styles.btnline}></div>
         <div className={styles.btnline}></div>
       </div>
-      <nav className={styles.menu + " " + (showMenu ? styles.show : "")}>
-        <div
-          className={styles.menubranding + " " + (showMenu ? styles.show : "")}
-        >
+      <nav className={styles.menu + " " + getShowStyle()}>
+        <div className={styles.menubranding + " " + getShowStyle()}>
           <div className={styles.portrait}></div>
         </div>
-        <ul className={styles.menunav + " " + (showMenu ? styles.show : "")}>
-          <li className={styles.navitem + " " + (showMenu ? styles.show : "")}>
-            <Link href="index.html" className={styles.navlink}>
+        <ul className={styles.menunav + " " + getShowStyle()}>
+          <li className={styles.navitem + " " + getShowStyle()}>
+            <Link
+              href="/"
+              className={`${styles.navlink} ${styles.current}`}
+              onClick={() => setShowMenu(false)}
+            >
               Home
             </Link>
           </li>
-          <li className={styles.navitem + " " + (showMenu ? styles.show : "")}>
-            <Link href="about.html" className={styles.navlink}>
+          <li className={styles.navitem + " " + getShowStyle()}>
+            <Link
+              href="/about"
+              className={styles.navlink}
+              onClick={() => setShowMenu(false)}
+            >
               About
             </Link>
           </li>
-          <li className={styles.navitem + " " + (showMenu ? styles.show : "")}>
-            <Link href="work.html" className={styles.navlink}>
+          <li className={styles.navitem + " " + getShowStyle()}>
+            <Link
+              href="/work"
+              className={styles.navlink}
+              onClick={() => setShowMenu(false)}
+            >
               My Work
             </Link>
           </li>
-          <li className={styles.navitem + " " + (showMenu ? styles.show : "")}>
-            <Link href="contact.html" className={styles.navlink}>
+          <li className={styles.navitem + " " + getShowStyle()}>
+            <Link
+              href="/contact"
+              className={styles.navlink}
+              onClick={() => setShowMenu(false)}
+            >
               How To Reach Me
             </Link>
           </li>

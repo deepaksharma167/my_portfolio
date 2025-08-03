@@ -27,6 +27,16 @@ a {
   text-decoration: none;
 }
 
+.lgheading {
+  font-size: 6rem;
+}
+
+.smheading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(lighten($primary-color, 2), 0.5);
+}
+
 header {
   position: fixed;
   z-index: 2;
@@ -175,4 +185,4 @@ main {
 }
 
 //keep the following import for mobile styles at the end of the file because we want to run it at once whole css has loaded/
-//@import "mobile";
+@import "mobile";

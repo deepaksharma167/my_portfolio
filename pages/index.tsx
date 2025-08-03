@@ -1,29 +1,28 @@
 import Link from "next/link";
-import styles from "../styles/Home.module.scss";
 export default function Home() {
   return (
     <>
       <main id="home">
-        <h1 className={styles.lgheading}>
+        <h1 className="lgheading">
           Deepak <span className="text-secondary">Sharma</span>
         </h1>
-        <h2 className={styles.smheading}>
+        <h2 className="smheading">
           Web Developer, Programmer, DevOps Engineer, Full Stack Developer &
-          Entrepreneur{" "}
+          Entrepreneur
         </h2>
         <div className="icons">
           <Link href="#!">
             <i className="fab fa-twitter fa-2x"></i>
           </Link>
-          <a href="#!">
+          <Link href="#!">
             <i className="fab fa-facebook fa-2x"></i>
-          </a>
-          <a href="#!">
+          </Link>
+          <Link href="#!">
             <i className="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="#!">
+          </Link>
+          <Link href="#!">
             <i className="fab fa-github fa-2x"></i>
-          </a>
+          </Link>
         </div>
       </main>
     </>
