@@ -14,7 +14,7 @@ export default function About() {
         <h2 className="smheading">Let me tell you a few things...</h2>
         <div className="about-info">
           <img
-            src="img/portrait.jpg"
+            src="/my_portfolio/img/portrait.jpg"
             alt="Deepak Sharma"
             className="bio-image"
           />

@@ -16,7 +16,10 @@ export default function work() {
         <div className="projects">
           <div className="item">
             <Link href="#!">
-              <img src="img/projects/project1.jpg" alt="Project" />
+              <img
+                src="/my_portfolio/img/projects/project1.jpg"
+                alt="Project"
+              />
             </Link>
             <Link href="#" className="btn-light">
               <i className="fas fa-eye"></i> Project
@@ -27,7 +30,10 @@ export default function work() {
           </div>
           <div className="item">
             <Link href="#!">
-              <img src="img/projects/project2.jpg" alt="Project" />
+              <img
+                src="/my_portfolio/img/projects/project2.jpg"
+                alt="Project"
+              />
             </Link>
             <Link href="#" className="btn-light">
               <i className="fas fa-eye"></i> Project
@@ -38,7 +44,10 @@ export default function work() {
           </div>
           <div className="item">
             <Link href="#!">
-              <img src="img/projects/project3.jpg" alt="Project" />
+              <img
+                src="/my_portfolio/img/projects/project3.jpg"
+                alt="Project"
+              />
             </Link>
             <Link href="#" className="btn-light">
               <i className="fas fa-eye"></i> Project
@@ -49,7 +58,10 @@ export default function work() {
           </div>
           <div className="item">
             <Link href="#!">
-              <img src="img/projects/project4.jpg" alt="Project" />
+              <img
+                src="/my_portfolio/img/projects/project4.jpg"
+                alt="Project"
+              />
             </Link>
             <Link href="#" className="btn-light">
               <i className="fas fa-eye"></i> Project
@@ -60,7 +72,10 @@ export default function work() {
           </div>
           <div className="item">
             <Link href="#!">
-              <img src="img/projects/project5.jpg" alt="Project" />
+              <img
+                src="/my_portfolio/img/projects/project5.jpg"
+                alt="Project"
+              />
             </Link>
             <Link href="#" className="btn-light">
               <i className="fas fa-eye"></i> Project
