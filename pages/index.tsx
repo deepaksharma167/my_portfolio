@@ -1,7 +1,11 @@
 import Link from "next/link";
+import Head from "next/head";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Home</title>
+      </Head>
       <main id="home">
         <h1 className="lgheading">
           Deepak <span className="text-secondary">Sharma</span>

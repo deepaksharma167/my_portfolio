@@ -1,6 +1,11 @@
+import Head from "next/head";
+
 export default function contact() {
   return (
     <>
+      <Head>
+        <title>Contact</title>
+      </Head>
       <main id="about">
         <h1 className="lgheading">
           Contact

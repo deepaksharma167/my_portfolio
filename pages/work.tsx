@@ -1,8 +1,12 @@
 import Link from "next/link";
+import Head from "next/head";
 
 export default function work() {
   return (
     <>
+      <Head>
+        <title>My Work</title>
+      </Head>
       <main id="work">
         <h1 className="lgheading">
           My
